@@ -11,12 +11,12 @@ function App() {
   const [recommendation, setRecommendation] = useState('');
   const [dietAdvice, setDietAdvice] = useState('');
   const [showResult, setShowResult] = useState(false);
-  const [resultColor, setResultColor] = useState(''); // Added for color management
+  const [resultColor, setResultColor] = useState(''); 
 
   const calculateBMI = (e) => {
     e.preventDefault();
 
-    const heightInMeters = parseFloat(height) / 100; // Convert height to meters
+    const heightInMeters = parseFloat(height) / 100; 
     const weightInKg = parseFloat(weight);
 
     if (!heightInMeters || !weightInKg || heightInMeters <= 0 || weightInKg <= 0 || !age) {
@@ -32,7 +32,7 @@ function App() {
     const calculatedBMI = (weightInKg / (heightInMeters ** 2)).toFixed(1);
     setBmi(calculatedBMI);
 
-    // Categorize BMI and provide recommendations
+ 
     let bmiCategory = '';
     let bmiColor = '';
     if (calculatedBMI < 18.5) {
@@ -76,7 +76,7 @@ function App() {
   };
 
   const calculateWeightToLoseOrGain = () => {
-    const heightInMeters = parseFloat(height) / 100; // Convert height to meters
+    const heightInMeters = parseFloat(height) / 100; 
     const weightInKg = parseFloat(weight);
 
     if (category === 'Underweight') {
@@ -84,7 +84,7 @@ function App() {
       const weightToGain = healthyWeightMin - weightInKg;
       return `You need to gain around ${weightToGain.toFixed(1)} kg to reach a healthy weight.`;
     } else if (category === 'Overweight' || category === 'Obese') {
-      const healthyWeightMax = 24.9 * (heightInMeters ** 2); // Calculate the upper limit for healthy weight
+      const healthyWeightMax = 24.9 * (heightInMeters ** 2); 
       const weightToLose = weightInKg - healthyWeightMax;
       return `You need to lose around ${weightToLose.toFixed(1)} kg to reach a healthy weight.`;
     } else {

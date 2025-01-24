@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/bmica/static/css/main.f69e29e4.css",
-    "main.js": "/bmica/static/js/main.9d9f9714.js",
-    "static/media/bmibg.jpg": "/bmica/static/media/bmibg.7a695e308e2a92d30ae5.jpg",
-    "index.html": "/bmica/index.html",
-    "main.f69e29e4.css.map": "/bmica/static/css/main.f69e29e4.css.map",
-    "main.9d9f9714.js.map": "/bmica/static/js/main.9d9f9714.js.map"
+    "main.css": "/bmimain/static/css/main.21c37b6f.css",
+    "main.js": "/bmimain/static/js/main.9d9f9714.js",
+    "static/media/bmibg.jpg": "/bmimain/static/media/bmibg.7a695e308e2a92d30ae5.jpg",
+    "index.html": "/bmimain/index.html",
+    "main.21c37b6f.css.map": "/bmimain/static/css/main.21c37b6f.css.map",
+    "main.9d9f9714.js.map": "/bmimain/static/js/main.9d9f9714.js.map"
   },
   "entrypoints": [
-    "static/css/main.f69e29e4.css",
+    "static/css/main.21c37b6f.css",
     "static/js/main.9d9f9714.js"
   ]
 }
